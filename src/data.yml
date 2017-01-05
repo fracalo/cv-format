@@ -1,0 +1,20 @@
+# a yml data format for a cv
+---
+name: Francesco
+surname: Calo
+birthdate:
+    day: 14
+    month: 4
+    year: 1980
+education:
+    - period:
+          from: 2016
+          to: 2016
+      descr: >
+        Currently working as a freelance web developer in La Spezia - Italy - UTC +1.
+        The stack used in recent projects has been principally focused on React, Node, and Redux,
+        but apart from that I have a variegated experience.
+        The programming language I'm most comfortable with is JS.
+        I have an all-around experience in design softwares
+        (before being a developer I was a designer),
+        I enjoy plunging into details and always increasing the automation process.'
