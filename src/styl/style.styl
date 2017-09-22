@@ -1,0 +1,78 @@
+body
+  display flex
+  padding 2em 1.3em
+
+.col3
+  flex 1 0 30%
+
+.col7
+  flex 1 1 70%
+  font-family Droid Serif, serif
+  
+.personal
+  font-family Oswald, sans-serif
+  &__detail--address, &__detail--contacts, &__detail--links
+    margin 0 0.2em
+  &__detail--links
+    font-size 85%
+  &:first-child
+    margin-top inherit
+  &:last-child
+    margin-bottom inherit
+  > .labelized
+    display block
+    margin-top 1em
+
+.labelized
+  font-size 70%
+  letter-spacing 0.1em
+  margin-right 0.6em
+  text-transform uppercase
+
+[labelize]
+  display: inline-block
+
+arrow-border = 13px
+.experience, .summary, .education, .certification
+  margin-top 2em
+  &__headline
+    padding 0 1.6em 0 0.9em 
+    background black
+    color #fff
+    font-family Oswald, sans-serif
+    text-transform uppercase
+    letter-spacing 0.3em
+    font-weight 800
+    &::before
+      content ''
+      display inline-block
+      border-left arrow-border solid #fff
+      border-bottom arrow-border solid transparent
+      border-top arrow-border solid transparent
+      left -0.9em
+      top 0.4em
+      position relative
+      z-index 1
+  &__single
+    width 100%
+    display inline-block
+    &__org-name
+      border-bottom 1px solid
+      margin 0
+    &__period
+      margin-top 0.8em
+      &__from
+        &::after
+          content '-'
+          padding 0 1em
+        
+.summary
+  &__content
+    margin-top 1.3em
+    padding-bottom 1em
+  &__skills
+    &__single
+      display inline-block
+      padding: 0 0 0 1em;
+      &::before
+        content '• '

@@ -2,19 +2,122 @@
 ---
 name: Francesco
 surname: Calo
-birthdate:
-    day: 14
-    month: 4
-    year: 1980
+summary: |- 
+    Currently working as web developer in La Spezia - Italy - UTC +1,  
+    consultant at Sun-times srl.  
+    The stack used in recent projects has been principally focused on React, Node, and Redux,
+    but apart from that I have a variegated experience, and like to experiment custom solutions.  
+    The programming language I'm most comfortable with is JS.  
+    I have an all-around experience in design softwares
+    (before being a developer I was a designer),  
+    I enjoy plunging into details and always increasing the automation process.
+address:
+  street: V. dell'Agostina, 8
+  city: Ricco' del Golfo (SP)
+  country: Italy
+phone: +39 347 5226036
+mail: fcaloisme@gmail.com
+mail2: info@fcalo.com
+site: https://fcalo.com
+github: github.com/fracalo
+stackoverflow: stackoverflow.com/users/2417031
+codepen: codepen.io/maio
+birth:
+    place: Genova - Italy
+    date:
+        day: 14
+        month: 4
+        year: 1980
+experience:
+    - period:
+          from: 'Feb. 2017'
+          to: 'present'
+      company: Sun-Times srl
+      core_business: Web, Advertising, Press. 
+      position: Lead Full-Stack Developer.
+      descr: |- 
+          In Sun-Times I'm responsible for the web-development sector, maintenance of pre-existing projects and general advisor for the technology to propose and implement for the company's clients and for it's own projects.   
+          With approximatly 100 open projects, ST has historically been developing on legacy Lamp stacks,   
+          through my arrival we have renovated the kind of products we deploy:  
+          I improved the service-providers used for our sites/projects,
+          some projects with specific needs were brought to AWS,
+          while I generally enforced a more encapsulated environment for every new project (even the smallest ones).
+          For what regards the Wordpress development (which is large share of the overall projects),
+          an which rappresents ST's milk cow, we strove to increase the performance of the sites deployed, through creation of optimized themes with a special attention to the customization of the backend.
+          Furthermore I had the opportunity to set up a project made with React for internal administrative purpose.
+    - period:
+          from: 2013
+          to: 2016
+      company: Entreprenuer at PS SRLS
+      core_business: Customized services & Ecommerce.
+      position: Front and Backend Development, Web Design, Marketing & Sales.
+      descr: |
+          PS was an evolution from the work done with the previous activity (Premispezia), while still providing custom graphic service, we focused on one spefic niche product (military wooden shields).
+          The best description for the business model is _vertical_ (from production to sales), this model helped rationalize costs and concentrate strength on one single product.
+          All the distribution was done through a personally developed e-shop (using Prestashop framework).
+    - period:
+          from: 2007
+          to: 2013
+      company: Entreprenuer at Premispezia SAS
+      core_business: Selling customized products and services.
+      position: Graphic designer, product craftsman and seller.
+      descr: |
+          The company was born, from my initiative, with the goal to serve markets related to sport-awards, ceremonies and technical sportswear;
+          as the company and context evolved the focus started to change toward merchandising, and more generally any kind of graphic service.
+          The products were customized through engraving, embroideries, screen-print, digital-print, plotter-filming, and similar technologies; the services constisted of printing marketing material, websites and integrated campains.
+    - period:
+          from: 2003
+          to: 2007
+      company: Bancroft Europe Imports SRL
+      core_business: European distributor of the Bancroft military cap and accessories
+      position: Sales & Marketing
+      descr: |
+          Bancroft Europe's core was the distribution of the American brand 'Bancroft' which had much appeal at the time in the Italian and European military market.
+          The working environment was quite dynamic; in the period in which I was at this company,
+          the workforce consisted of 6-8 persons (and for many duties we were all interchangeable).
+          Being involved in the marketing I promoted, developed and managed the company's website - www.bancroftemporium.it (which also included an ecommerce section which was quite innovative for the time - made in Flash)
 education:
     - period:
+          from: 1999
+          to: 2003
+      institute: ESE - European School of Economic
+      qualification: B.A. Economics
+#    - period:
+#          from: 1994
+#          to: 1999
+#      institute: Liceo Scientifico Pacinotti - La Spezia
+#      qualification: Scientific High-school Diploma
+certification:
+    - period:
           from: 2016
-          to: 2016
-      descr: >
-        Currently working as a freelance web developer in La Spezia - Italy - UTC +1.
-        The stack used in recent projects has been principally focused on React, Node, and Redux,
-        but apart from that I have a variegated experience.
-        The programming language I'm most comfortable with is JS.
-        I have an all-around experience in design softwares
-        (before being a developer I was a designer),
-        I enjoy plunging into details and always increasing the automation process.'
+      institute: EPFL - Ecole polytechnique fédérale de Lausanne
+      qualification: Functional Programming in Scala
+skills:
+    - name: Front-end Web Development
+    - name: Javascript
+    - name: ES6/7
+    - name: Scala
+    - name: Dom (Document Object Model)
+    - name: Graphic Design
+    - name: Web Design
+    - name: Scalable Vector Graphic
+    - name: Canvas
+    - name: Animations (Css/Js)
+    - name: Electron (Atom text editor)
+    - name: React
+    - name: Angular
+    - name: Jquery
+    - name: Lodash
+    - name: Ramdajs
+    - name: Requirejs
+    - name: Browserify
+    - name: Webpack
+    - name: Rollup
+    - name: Back-end Development in nodejs
+    - name: AWS Server Maintenance
+    - name: PHP
+    - name: Mysql
+    - name: Mongodb
+    - name: Wordpress Development
+projects:
+    - name: De Casteljau Demo

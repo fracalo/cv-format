@@ -1,3 +1,71 @@
-.testing(color='red', font-weight=900)
-    .p #{name}
-    .p #{surname}
+doctype html
+html(lang="en-GB")
+    head
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      meta(name='theme-color' content='#800080')
+      meta(name='author' content='Francesco Calo')
+      meta(name='description' content='Francesco Calo\'s curriculum')
+      meta(name='referrer' content='origin')
+      meta(name='googlebot' content='index')
+      title #{title}
+      link(rel='stylesheet', href='assets/style.css')
+      link(rel='icon', href='assets/favicon.png')
+      link(href='https://fonts.googleapis.com/css?family=Droid+Serif|Oswald' rel='stylesheet')
+    body
+        .personal.col3
+            h1 #{name} #{surname}'s CV
+            p.personal__detail.personal__detail--address #{address.street}
+            p.personal__detail.personal__detail--address #{address.city}
+            p.personal__detail.personal__detail--address #{address.country}
+            p.personal__detail Date of birth: #{birth.date.day}-#{birth.date.month}-#{birth.date.year}
+            p.personal__detail.personal__detail--contacts Tel: #{phone}
+            p.personal__detail.personal__detail--contacts #{mail}
+            p.personal__detail.personal__detail--contacts #{mail2}
+            p.personal__detail.personal__detail--contacts #{site}
+            p.personal__detail.personal__detail--links(labelize='Github account') #{github}
+            p.personal__detail.personal__detail--links(labelize='SO account') #{stackoverflow}
+            p.personal__detail.personal__detail--links(labelize='Codepen account') #{codepen}
+        .col7
+          ul.summary
+            span.summary__headline Summary
+            .summary__content!= summary
+          ul
+            .summary__skills__headline Prominent Skills:
+            each sk in skills
+              li.summary__skills__single= sk.name
+          ul.experience
+            span.experience__headline Experience
+            each ex in experience
+                li.experience__single
+                    .experience__single__org-name
+                        h2= ex.company
+                    .experience__single__period 
+                        span.experience__single__period__from(labelize='from') #{ex.period.from}
+                        span.experience__single__period__to(labelize='to') #{ex.period.to}
+                    .experience__single__core
+                        span(labelize='core') #{ex.core_business}
+                    .experience__single__position
+                        span(labelize='position') #{ex.position}
+                    .experience__single__descr(labelize='description')!= ex.descr 
+          ul.education
+            span.education__headline Education
+            each ed in education
+                li.education__single
+                    .education__single__org-name
+                        h2= ed.institute
+                    .education__single__period
+                        span.education__single__period__from(labelize='from') #{ed.period.from}
+                        span.education__single__period__to(labelize='to') #{ed.period.to || ed.period.from}
+                    .education__single__qualification(labelize='qualification') #{ed.qualification}
+          ul.certification
+            span.certification__headline Certification
+            each cert in certification
+              li.certification__single
+                .certification__single__org-name
+                  h2= cert.institute
+                .certification__single__period
+                    span.certification__single__period__from(labelize='from') #{cert.period.from}
+                    span.certification__single__period__to(labelize='to') #{cert.period.to || cert.period.from}
+                .certification__single__qualification(labelize='qualification') #{cert.qualification}
+        script(src='./assets/app.js')
